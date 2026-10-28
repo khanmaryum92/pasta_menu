@@ -1,3 +1,7 @@
+.background {
+  background-color: #fef1a5;
+}
+
 h1 {
   font-size: 40px;
   margin-top: 0;
@@ -18,14 +22,22 @@ h3 {
   font-family: "Rouge Script", cursive;
 }
 
+hr {
+  height: 8px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #d20202 0%,
+    #d20202 33%,
+    #ffffff 33%,
+    #ffffff 66%,
+    #015d14 66%,
+    #015d14 100%
+  );
+}
+
 p {
   font-size: 16px;
   text-align: center;
   font-family: "Rouge Script", cursive;
-}
-.card-img-1 {
-  display: flex;
-  align-items: center; /* Vertically centers the text and image */
-  gap: 20px;
-  height: 250px;
 }
