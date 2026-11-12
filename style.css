@@ -1,5 +1,5 @@
 .background {
-  background-color: #fef1a5;
+  background: linear-gradient(to bottom, #fef1a5, #B64926);
 }
 
 .pastaName, .drink {
@@ -52,35 +52,66 @@ p {
   color: #3d3d3d;
 }
 
-.carousel-inner {
-  width: 250px;
-  height: 600px;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-
-.mb-0 {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-align: center;
-  font-family: "Rouge Script", cursive;  
-}
-
 h5 {
   text-align: center;
   font-family: "Rouge Script", cursive;
   color: #444343;
 }
 
+.nav-tabs {
+  justify-content: flex-end;
+  color: #B64926;
+}
+
 .nav-item {
   text-align: center;
   font-family: "Rouge Script", cursive;
   color: #746B03;
-  font-size: 20px;
+  font-size: 25px;
 }
+
+.nav-link {
+  color: #B64926;
+}
+
+.drinkMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.drinkImages {
+  text-align: center;
+}
+
+.drinkImg {
+  width: 250px;
+  height: 600px;
+  object-fit: contain;
+  margin: 10px;
+  display: inline;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.pastaMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pastaImages {
+  text-align: center;
+}
+
+.pastaImg {
+  width: 250px;
+  height: 600px;
+  object-fit: contain;
+  margin: 10px;
+  display: inline;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+
