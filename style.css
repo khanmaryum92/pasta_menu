@@ -15,7 +15,7 @@
 .drinkDesc {
   font-size: 27px;
   font-family: "Times New Roman", Times, serif;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .price {
@@ -97,12 +97,6 @@ h5 {
   color: #b64926;
 }
 
-.drinkMenu {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
 .drinkImages {
   text-align: center;
   overflow: hidden;
@@ -120,7 +114,7 @@ h5 {
   gap: 50px;
 }
 
-.pastaMenu {
+.pastaMenu, .drinkMenu {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -166,3 +160,4 @@ article {
   font-family: "Sacramento", cursive;
   color: #ffffff;
 }
+
