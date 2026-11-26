@@ -14,12 +14,48 @@ async function getdata() {
   console.log(response);
   console.log(data);
 
-  const container = document.getElementById("pastaType");
+  const las = document.getElementById("pastaType");
+  las.textContent =
+    "Choose your pasta shape: " +
+    data.records[0].fields.specificNoodle[0] +
+    ", " +
+    data.records[0].fields.specificNoodle[1];
 
-  data.records.forEach((pastaType) => {
-    container.innerHTML += `
-  ${pastaType.fields.Name}, 
-  ${pastaType.fields.Specific_Noodle}`;
-  });
+  const spag = document.getElementById("spagType");
+  spag.textContent =
+    "Choose your pasta shape: " +
+    data.records[3].fields.specificNoodle[0] +
+    ", " +
+    data.records[3].fields.specificNoodle[1];
+
+  const mac = document.getElementById("macType");
+  mac.textContent =
+    "Choose your pasta shape: " +
+    data.records[2].fields.specificNoodle[0] +
+    ", " +
+    data.records[2].fields.specificNoodle[1] +
+    ", " +
+    data.records[2].fields.specificNoodle[2];
+
+  const pas = document.getElementById("pasType");
+  pas.textContent =
+    "Choose your pasta shape: " +
+    data.records[1].fields.specificNoodle[0] +
+    ", " +
+    data.records[1].fields.specificNoodle[1] +
+    ", " +
+    data.records[1].fields.specificNoodle[2] +
+    ", " +
+    data.records[1].fields.specificNoodle[3];
+
+  const spic = document.getElementById("spicType");
+  spic.textContent =
+    "Choose your pasta shape: " + data.records[4].fields.specificNoodle[0];
+  //   data.records.forEach((pastaType) => {
+  //     console.log(pastaType);
+  //     //   container.innerHTML = `
+  //     // ${pastaType.fields.Name},
+  //     // ${pastaType.fields.specificNoodle}`;
+  //   });
 }
 getdata();

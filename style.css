@@ -1,12 +1,27 @@
 .background {
-  background: linear-gradient(to bottom, #fef1a5, #B64926);
+  background: linear-gradient(to bottom, #fef1a5, #b64926);
 }
 
-.pastaName, .drink {
-  color: #8E2800;
+.pastaName,
+.drink {
+  color: #8e2800;
   font-size: 30px;
   text-align: center;
   font-family: "Rouge Script", cursive;
+  font-weight: bold;
+}
+
+.pastaDesc,
+.drinkDesc {
+  font-size: 27px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.price {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
 }
 
 h1 {
@@ -28,8 +43,8 @@ h3 {
   font-size: 2px;
   text-align: center;
   font-family: "Rouge Script", cursive;
-  color: #8E2800;
-} 
+  color: #8e2800;
+}
 
 hr {
   height: 25px;
@@ -62,7 +77,7 @@ h5 {
   justify-content: flex-end;
   gap: 20px;
   padding: 10px;
-  color: #8E2800;
+  color: #8e2800;
   background-color: #f5e8ac;
   font-family: "Rouge Script", cursive;
   font-size: 25px;
@@ -74,12 +89,12 @@ h5 {
 .nav-item {
   text-align: center;
   font-family: "Rouge Script", cursive;
-  color: #746B03;
+  color: #746b03;
   font-size: 25px;
 }
 
 .nav-link {
-  color: #B64926;
+  color: #b64926;
 }
 
 .drinkMenu {
@@ -108,7 +123,16 @@ h5 {
 .pastaMenu {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* justify-content: center; */
+  gap: 20px;
+  /* width: 800px; */
+  text-align: center;
+  align-items: center;
+}
+
+article {
+  text-align: center;
+  width: 700px;
 }
 
 .pastaImages {
@@ -128,7 +152,7 @@ h5 {
 }
 
 .footer {
-  background-color: #8E2800;
+  background-color: #8e2800;
   color: #ffffff;
   text-align: center;
   padding: 25px;
